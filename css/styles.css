@@ -1,0 +1,201 @@
+/* Raleway 700
+Roboto 400 500 700 900
+Головний шрифт  Roboto
+Головний колір шрифта #212121
+Другорядний колір шрифта #757575
+Акцентний колір шрифта #2196F3
+Білий фон #FFFFFF
+*/
+:root {
+/* text colors */
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--link-text-color: #2196F3;
+--hero-text-color: #FFFFFF;
+--logo-text-color: #000000;
+/* text fonts */
+--primary-text-font: "Roboto",sans-serif;
+--secondary-text-font: "Raleway",sans-seri;
+/* bg color */
+--primary-bg: #FFFFFF;
+--secondary-bg: #2F303A;
+--btn-active-bg: #188CE8;
+--team-section-bg: #F5F4FA;
+}
+body {
+font-family: var(--primary-text-font);
+    font-style: normal;
+    font-size: 14px;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg);
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.list {
+        list-style: none;
+    }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+/* header */
+.logo {
+    font-family: var(--secondary-text-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;   
+        letter-spacing: 0.03em;    
+        color: var(--logo-text-color);
+}
+.logo-part {
+    color: var(--link-text-color);
+}
+.nav,
+.contact {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+}
+.navigation:hover,
+.navigation:focus {
+    color: var(--link-text-color);
+}
+.current {
+    color: var(--link-text-color);
+}
+.contact {
+    color: var(--secondary-text-color);
+}
+.contact:hover,
+.contact:focus {
+    color: var(--link-text-color);
+}
+/* main */
+.hero {
+    background-color: var(--secondary-bg);
+}
+.hero-title {
+font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+}
+.hero-btn {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    background: var(--link-text-color);
+    cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--btn-active-bg);
+}
+.benefits-title {
+    font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+.benefits-text {
+    font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color:var(--secondary-text-color);
+}
+.section-title {
+font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-section {
+    background: var(--team-section-bg);
+}
+.team {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+}
+.position {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/* footer */
+.contacts {
+    background-color: var(--secondary-bg);
+}
+.logo.below {
+    color: var(--hero-text-color);
+}
+.location,
+.contact-below {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;   
+}
+.location {
+    color: var(--hero-text-color);
+}
+.contact-below {
+    color: rgba(255, 255, 255, 0.6);
+}
+.location:hover,
+.location:focus,
+.contact-below:hover,
+.contact-below:focus {
+    color: var(--link-text-color);
+}
+
+/* Page 2 - portfolio */
+.filter-btn {
+    font-family: inherit;
+    font-style: inherit;
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--team-section-bg);
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--hero-text-color);;
+    background: var(--link-text-color);
+}
+.card-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.card-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
