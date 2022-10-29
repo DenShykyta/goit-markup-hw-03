@@ -23,7 +23,7 @@ Roboto 400 500 700 900
 --team-section-bg: #F5F4FA;
 }
 body {
-font-family: var(--primary-text-font);
+    font-family: var(--primary-text-font);
     font-style: normal;
     font-size: 14px;
     color: var(--primary-text-color);
@@ -42,9 +42,12 @@ font-family: var(--primary-text-font);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 /* RESET  */
 img {
-display: block;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .link {
     text-decoration: none;
@@ -70,45 +73,50 @@ p {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-    /* outline: 2px solid red; */
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* header */
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC ;
 }
 .logo {
     font-family: var(--secondary-text-font);
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;   
-        letter-spacing: 0.03em;    
-        color: var(--logo-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;   
+    letter-spacing: 0.03em;    
+    color: var(--logo-text-color);
 
-        margin-right: 93px;
+    margin-right: 93px;
 }
 .logo-part {
     color: var(--link-text-color);
 }
 .nav-header-list,
 .contact-header-list {
-display: flex;
+    display: flex;
 }
 .nav {
     margin-right: auto;
 }
 .nav,
 .contact {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
 }
-.nav-header-item:not(:last-child) {
-    margin-right: 50px;
-}
+.nav-header-item:not(:last-child),
 .contact-header-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -118,7 +126,9 @@ display: flex;
     padding: 32px 0;    
 }
 .navigation:hover,
-.navigation:focus {
+.navigation:focus,
+.contact:hover,
+.contact:focus {
     color: var(--link-text-color);
 }
 .current {
@@ -127,10 +137,7 @@ display: flex;
 .contact {
     color: var(--secondary-text-color);
 }
-.contact:hover,
-.contact:focus {
-    color: var(--link-text-color);
-}
+
 /* main */
 
 /* HERO SECTION */
@@ -138,9 +145,10 @@ display: flex;
 .hero {
     background-color: var(--secondary-bg);
     text-align: center;
+    padding: 200px 0;
 }
 .hero-title {
-font-weight: 900;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -165,8 +173,6 @@ font-weight: 900;
     cursor: pointer;
 
     min-width: 216px;
-    min-height: 50px;
-    max-width: 250px;
     border-radius: 4px;
     padding: 10px 32px;
     border: none;
@@ -178,16 +184,13 @@ font-weight: 900;
 }
 
 /* BENEFITS SECTION */
-.benefits-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-}
 .benefits-title {
     font-weight: 700;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
         margin-bottom: 10px;
 }
@@ -202,13 +205,14 @@ font-weight: 900;
 }
 .benefits-text {
     font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color:var(--secondary-text-color);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--secondary-text-color);
 }
 
 /* SERVICES SECTION */
-.services-container {
+.services-section {
+    padding-top: 0;
     padding-bottom: 94px;
 }
 .services-container .section-title {
@@ -220,17 +224,14 @@ font-weight: 900;
     gap: 30px;
 }
 .section-title {
-font-weight: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
 /* TEAM SECTION */
-.team-section-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .team-section-container .section-title {
     margin-bottom: 50px;
 }
@@ -246,32 +247,32 @@ font-weight: 700;
     background-color: var(--primary-bg);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
+   
     width: 270px;
 }
 .team-wrapper {
-    padding: 30px 10px;
+    padding: 30px 0; 
 }
 .team-name {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
         
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .position {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
     color: var(--secondary-text-color);
 }
 
 /* footer */
-.footer-container {
+.contacts {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -308,10 +309,7 @@ font-weight: 700;
 }
 
 /* Page 2 - portfolio */
-.progects-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .progects-btn-list {
     display: flex;
     justify-content: center;
